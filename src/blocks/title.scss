@@ -1,0 +1,33 @@
+.title {
+  height: 900px;
+  background-color: rgb(35, 29, 29);
+
+  &_photo {
+    // height: 700px;
+    max-width: 700px;
+    margin: 100px auto;
+    // overflow: hidden;
+    box-sizing: border-box;
+
+    @include iPad {
+      max-width: 500px;
+    }
+
+    @include iPhone {
+      max-width: 350px;
+    }
+
+    &--img {
+      width: 100%;
+      transform: rotate(-10deg);
+
+      @include iPad {
+        width: 80%;
+      }
+  
+      @include iPhone {
+        width: 80%;
+      }
+    }
+  }
+}
