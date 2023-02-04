@@ -17,7 +17,7 @@
   }
 }
 
-@mixin Planshet {
+@mixin NoteBook {
   @media (min-width: 989px) and (max-width: 1540px) {
     @content;
   }
