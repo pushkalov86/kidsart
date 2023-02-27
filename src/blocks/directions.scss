@@ -2,7 +2,6 @@
   margin: 0 auto;
   padding-bottom: 150px;
   max-width: 1540px;
-  font-family: "Bebas Neue", cursive;
   background-color: rgb(35, 29, 29);
   color: #fff;
 
@@ -14,9 +13,9 @@
   }
 
   &_title {
-    font-size: 30px;
+    font-size: 50px;
     text-align: center;
-    margin: 50px auto 100px;
+    margin: 100px auto 50px;
     font-weight: 500;
   }
 
@@ -47,7 +46,7 @@
 
     &--title {
       font-size: 30px;
-      font-weight: 700;
+      font-weight: 500;
       align-self: center;
       margin: 30px auto;
     }

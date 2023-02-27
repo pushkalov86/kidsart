@@ -1,19 +1,15 @@
 .title {
   height: 100%;
   background-color: rgb(35, 29, 29);
-  margin: -1px 0;
 
   &_photo {
-    // height: 700px;
     max-width: 700px;
     margin: 60px auto 50px;
-    // overflow: hidden;
     box-sizing: border-box;
-    // align-items: center;
     text-align: center;
 
     @include iPhone {
-      max-width: 400px;
+      max-width: 100%;
     }
 
     @include iPad {
@@ -32,5 +28,9 @@
         width: 80%;
       }
     }
+  }
+
+  &_content {
+    position: relative;
   }
 }

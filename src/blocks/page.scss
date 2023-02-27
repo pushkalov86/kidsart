@@ -1,31 +1,42 @@
-.page {
+html {
   scroll-behavior: smooth;
-  max-width: 100%;
-  margin: 0;
-  padding: 0;
-  width: 100%;
+}
+
+.page {
+  flex: 1 1 auto;
 
   &__body {
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0 auto;
-    max-width: 100%;
     overflow-x: hidden;
-    box-sizing: border-box;
-    width: 100%;
-    background-color: #f8f8f8;
     display: flex;
     flex-direction: column;
+    min-height: 100%;
   }
+}
+
+.wraper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: clip;
 }
 
 body {
   height: 100%;
   line-height: 1;
-  font-size: 14px;
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: #333;
+  font-family: "Bebas Neue", cursive;
+  background-color: rgb(35, 29, 29);
+}
+
+[class*="_container"] {
+  margin: 0 auto;
+  max-width: 1540px;
+  padding: 15px;
 }
 
 img {
   margin: 0;
+}
+
+.menu_open body {
+  overflow: hidden;
 }

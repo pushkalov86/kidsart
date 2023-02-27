@@ -1,36 +1,29 @@
 .header {
-  height: 170px;
-  display: flex;
-  width: 100%;
-  background-color: #370a41;
-  align-items: center;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: 600;
-  font-size: 22px;
-  color: #938787;
-  line-height: 22px;
-  margin: 0;
   position: sticky;
   top: 0;
-  z-index: 10;
-  flex-direction: column;
+  width: 100%;
+  transition: left 0.3s 0s;
+  height: 100px;
+  background-color: #370a41;
+  z-index: 15;
 
   @include iPhone {
-    height: 50px;
+    height: 70px;
+    // font-size: 20px;
   }
 
   @include iPad {
     height: 130px;
-    font-size: 18px;
+    // font-size: 18px;
   }
 
-  &_content {
-    max-width: 1520px;
+  &_menu {
+    flex: 1 1 auto;
+  }
+
+  &_container {
     display: flex;
     justify-content: space-between;
-    width: 100%;
-    align-items: center;
-    box-sizing: border-box;
     height: 100%;
 
     @include iPad {
@@ -40,7 +33,7 @@
 
   &_logo {
     margin: 0;
-    height: 80px;
+    z-index: 2;
 
     @include iPad {
       order: 2;
@@ -48,21 +41,28 @@
 
     img {
       position: relative;
-      top: 35px;
+      top: 0;
       left: 25px;
-      // width: 280px;
-      height: 70%;
       object-fit: contain;
-  
-      @include iPad {
-        // width: 150px;
-        height: 100px;
-      }
-  
+      height: 100px;
+      transition: all 0.3s linear 0s;
+
       @include NoteBook {
-        width: 200px;
         margin-right: 30px;
       }
     }
+  }
+}
+
+.menu_open .header_container {
+  align-items: start;
+  background-color: #370a41;
+}
+
+.menu_open .header_logo img {
+  @include iPhone {
+    height: 120px;
+    top: 50px;
+    left: 60px;
   }
 }
