@@ -14,7 +14,7 @@
   }
 
   &_title {
-    font-size: 50px;
+    font-size: calc(36px + 14 * (100vw / 992));
     text-align: center;
     margin: 100px auto 50px;
     font-weight: 500;
