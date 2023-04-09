@@ -41,6 +41,10 @@
     align-items: center;
     margin-top: 90px;
 
+    @include iPhone {
+      padding: 0;
+    }
+
     &--img {
       max-width: 250px;
     }
@@ -50,6 +54,10 @@
       font-weight: 500;
       align-self: center;
       margin: 30px auto;
+
+      @include iPhone {
+        font-size: calc(24px + 8 * (100vw / 992));
+      }
     }
 
     &--text {
@@ -57,6 +65,10 @@
       text-indent: 1.5em;
       text-align: justify;
       line-height: 40px;
+
+      @include iPhone {
+        font-size: calc(16px + 8 * (100vw / 992));
+      }
     }
 
     &--1 {
